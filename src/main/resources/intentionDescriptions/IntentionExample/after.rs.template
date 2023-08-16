@@ -1,0 +1,5 @@
+import com.bandlab.uikit.icons.R as UIR
+
+fun foo() {
+    UIR.
+}

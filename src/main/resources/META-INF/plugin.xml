@@ -1,10 +1,21 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
+    <!-- TODO: change id, name and vendor   -->
     <id>com.github.undin.pluginexample</id>
     <name>plugin-example Template</name>
     <vendor>undin</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <intentionAction>
+            <className>com.github.undin.pluginexample.IntentionExample</className>
+            <!--  TODO: proper category name -->
+            <category>Kotlin/For Vanya</category>
+            <language>kotlin</language>
+        </intentionAction>
+    </extensions>
 </idea-plugin>
